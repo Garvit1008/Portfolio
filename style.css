@@ -1,0 +1,162 @@
+/* The basic stuff to make it work */
+*{
+    margin: 0;
+
+}
+
+.toggleclose{
+    display: none;
+}
+
+.togglebutton{
+    display: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #2B2B38;
+    font-family: 'Allura', cursive;
+    font-family: 'Changa', sans-serif;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Tangerine', ;
+    color: whitesmoke;
+}
+.navv{
+    display: flex;
+    color: white;
+    gap: 4px;
+    justify-content: space-between;
+    padding:12px 105px;
+}
+.navv h3{
+    font-size: 28px;
+}
+.seminavv{
+    display: flex;
+    list-style: none;
+    gap: 55px;
+}
+.seminavv  li a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 25px;
+}
+.seminavv  li a:hover{
+    color: #0ef;
+    text-shadow: 2px 2px 8px #0ef;
+}
+.frontpage{
+    display: flex;
+    flex-direction: column;
+    gap: 24PX;
+    margin-left:105px;
+}
+.innerdiv1{
+    display: flex;
+    font-size: 20px;
+    gap: 10px;
+}
+.innerdiv2{
+    color: #0ef;
+    font-size: 35px;
+}
+.innerdiv3{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    gap: 33px;
+}
+.innerdiv4{
+    font-size: 22px;
+}
+/* .btn{
+    margin-top:20px;
+    height: 55px;
+    width: 140px;
+    background: goldenrod;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 15px;
+    color: #0ef;
+} */
+
+/* CSS */
+/* .btn {
+    margin-top: 22px;
+  color: black;
+  padding: 15px 25px;
+  border-radius: 14px;
+  font-weight: bold;
+  font-size: 16px;
+
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  cursor: pointer;
+} */
+.btn{
+    margin-top: 12px;
+    box-shadow: inset -3px -3px 9px rgba(255, 255, 255, 0.25), inset 0px 3px 9px rgba(255, 255, 255, 0.3), inset 0px 1px 1px rgba(255, 255, 255, 0.6), inset 0px -8px 36px rgba(0, 0, 0, 0.3), inset 0px 1px 5px rgba(255, 255, 255, 0.6), 2px 19px 31px rgba(0, 0, 0, 0.2);
+    height: 55px;
+    width: 140px;
+    background-color: #050801;
+    color: #03e9f4;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    overflow: hidden;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+  .btn:hover{
+      background: #0ef;
+      color: #050801;
+      box-shadow: 0 0 5px #03e9f4,
+                  0 0 25px #03e9f4,
+                  0 0 50px #03e9f4,
+                  0 0 200px #03e9f4;
+       -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+  }
+  .main{
+    display: flex; 
+    padding-top: 122px;
+    gap: 250px;
+    justify-content: space-evenly;
+  }
+  .hex4 {
+    height: 300px;
+    width:300px;
+    background: #0ef;
+    margin-right:50px;
+    -webkit-clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+    clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+  }
+ 
+  .hex {
+    display: flex;
+    position: relative;
+    width: 240px;
+    height: 265px;
+    background-color: #424242;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  }
+  img{
+    margin-top: -95px;
+  }
+  @media screen and (max-width:968px) {
+    .togglebutton{
+        display: block;
+    }
+    .seminavv{
+        display: none;
+    }
+    .navv{
+        display: flex;
+    }
+    
+}
