@@ -11,13 +11,13 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
 </head>
 <body>
     <header class="navv">
         <div style="display: flex; gap: 12px;">
             <h3>Garvit</h3><h3 style="color:#0ef">Dang</h3>
         </div>
+        <div class="toggle-content">
             <ul class="seminavv" id="semi"> 
                 <li><a href="" style="color:#0ef;text-shadow: 2px 2px 8px #0ef;;">Home</a></li>
                 <li><a href="">About</a></li>
@@ -26,11 +26,14 @@
                 <li><a href="">Contact</a></li>
             </ul>
             <div class="togglebutton" onclick="navshow()" id="tog">
-            <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-bars"></i>
             </div>
-            <div class="toggleclose" id="close">
+            <div class="toggleclose" id="close" onclick="hidden()">
                 <i class="fa-sharp fa-regular fa-xmark"></i>
             </div>
+        </div>
+            
+            
     </header>
     <div class="main">
 
@@ -60,6 +63,7 @@
     </div>
     <img src="chris.png">
 </div>
+<script src="script.js"></script>
 
 </body>
 </html>

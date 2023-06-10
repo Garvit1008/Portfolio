@@ -1,15 +1,26 @@
+
+
 function navshow(){
-    let semi = document.getElementById('semi');
-    let tog = document.getElementById('tog');
-    let close = document.getElementById('close');
+    const semi = document.getElementById('semi');
+const tog = document.getElementById('tog');
+const close = document.getElementById('close');
+
     tog.addEventListener("click",function(){
-        tog.style.display='none';
-        semi.style.display='block';
-        close.style.display='block';
+        semi.classList.toggle('show');
+        close.classList.toggle('show');
+        tog.classList.toggle('hide');
     })
+    
+}
+
+function hidden(){
+    const semi = document.getElementById('semi');
+const tog = document.getElementById('tog');
+const close = document.getElementById('close');
+
     close.addEventListener("click",function(){
-        tog.style.display='block';
-        semi.style.display='none';
-        close.style.display='none';
+        semi.classList.toggle('hide');
+        close.classList.toggle('hide');
+        tog.classList.toggle('show');
     })
 }
