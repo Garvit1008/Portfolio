@@ -140,12 +140,16 @@ body{
     .seminavv{
         display: block;
     }
+    .toggle-content{
+        background: none;
+    }
     .navv{
         display: flex;
     }
     .seminavv{
         display:flex;
         flex-direction: row;
+        background: none;
     }
     #tog{
         display: none;
