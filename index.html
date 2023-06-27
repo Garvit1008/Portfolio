@@ -1,69 +1,138 @@
 <html lang="en">
-<head>
+<head>  
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css"> -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Allura&family=Changa&family=Dancing+Script:wght@500;600&family=Tangerine:wght@700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
 </head>
-<body>
+<body> 
     <header class="navv">
         <div style="display: flex; gap: 12px;">
-            <h3>Garvit</h3><h3 style="color:#0ef">Dang</h3>
+          <img src="garvitlogo.png">
         </div>
-        <div class="toggle-content">
             <ul class="seminavv" id="semi"> 
-                <li><a href="" style="color:#0ef;text-shadow: 2px 2px 8px #0ef;;">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Skills</a></li>
-                <li><a href="">Projects</a></li>
+                <li><a href="#"  id="hom" onclick="colorchange2()" class="home">Home</a></li>
+                <li><a href="#skills" id="skilll">Skills</a></li>
+                <li><a href="#projectss" id="proo" onclick="colorchange()">Projects</a></li>
                 <li><a href="">Contact</a></li>
             </ul>
-            <div class="togglebutton" onclick="nav_show()" id="tog">
-                <i class="fas fa-bars"></i>
-              </div>              
-            <div class="toggleclose" id="close" onclick="hidden_nav()">
-                <i class="fa-sharp fa-regular fa-xmark"></i>
-            </div>
-        </div>
-            
-            
+            <label class="switch">
+  <input type="checkbox" checked>
+  <span class="slider round"></span>
+</label>
     </header>
     <div class="main">
-
     <div class="frontpage">
-
     <div class="innerdiv1">
-        <h1>Hello,</h1>
-        <h1 style="color:#0ef">I'm</h1> 
+        <h1 class="yolo">Hello,</h1>
+        <h1 class="yolo" style="color:#0ef">I'm</h1> 
     </div>
-
     <div class="innerdiv2">
-        <h1>GARVIT DANG</h1>
+        <h1 class="yolo">GARVIT</h1><h1 style="color: #0ef;">DANG</h1>
     </div>
-
     <div class="innerdiv3">
         <h1>Full-Stack Developer</h1>
     </div>
-
     <div class="innerdiv4">
         <p>With knowledge in Web Development and 
         design, I offer the best brojects resulting
-        in quality work</p>
+        in quality work... </p>
     </div>
 
-    <button class="btn">Let's Talk</button>
-
+    <button class="btn" onclick="openform()">Let's Talk</button>  
     </div>
-    <img src="chris.png">
+</div>
+<section id="skills"></section>
+<div class="skills" id="skill-id">
+  <div><h1>Skills</h1></div>
+  <div class="semiskills">
+  <div class="skill-html">
+    <img src="https://cdn3d.iconscout.com/3d/free/thumb/html-5728485-4781249.png" alt="content">
+    <div class="container">
+      <div class="skill html">80%</div>
+  </div>
+    <p>I use HTML to create website layouts based on templates and wireframes. HTML is a semantic language used to control how information on websites and in web apps is structured and to determine how users navigate and interact with them.</p>
+  </div>
+  <div class="skill-html">
+    <img src="https://cdn.iconscout.com/icon/free/png-256/css-37-226088.png" alt="content">
+    <div class="container">
+      <div class="skill html">80%</div>
+  </div>
+    <p>I use HTML to create website layouts based on templates and wireframes. HTML is a semantic language used to control how information on websites and in web apps is structured and to determine how users navigate and interact with them.</p>
+  </div>
+  <div class="skill-html">
+    <img src="https://cdn3d.iconscout.com/3d/premium/thumb/java-script-file-6460811-5326838.png" alt="content">
+    <div class="container">
+      <div class="skill html">80%</div>
+  </div>
+    <p>For implementing the front-end logic that defines the behavior of the visual elements of a web application. A JavaScript developer is also responsible for connecting this with the services that reside on the back-end.</p>
+  </div>
+  <div class="skill-html">
+    <img src="https://www.patterns.dev/img/reactjs/react-logo@3x.svg" alt="content">
+    <div class="container">
+      <div class="skill html">80%</div>
+  </div>
+    <p>For implementing the front-end logic that defines the behavior of the visual elements of a web application. A JavaScript developer is also responsible for connecting this with the services that reside on the back-end.</p>
+  </div>
+  <div class="skill-html">
+    <img src="data:image/jpeg;base64,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" alt="content">
+    <div class="container">
+      <div class="skill html">80%</div>
+  </div>
+    <p>For implementing the front-end logic that defines the behavior of the visual elements of a web application. A JavaScript developer is also responsible for connecting this with the services that reside on the back-end.</p>
+  </div>
+</div>
+</div>
+<section id="projectss"></section>
+
+<div class="projects">
+  <h1>Projects</h1>
+  <div class="semi-projects">
+    <div class="project-image"><img src="https://cdn.discordapp.com/attachments/998995040514883694/1005812071889383454/Proj1.png" class="porject-image-inside"></div>
+    <div class="vl"></div>
+    <div class="project-content">
+    <h2>Designing Dashboards</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam natus officiis earum perferendis commodi rerum qui! Quisquam voluptatibus ducimus quasi perspiciatis debitis iste, earum repellendus aut maiores totam nostrum odio.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati vitae perspiciatis distinctio. Impedit eum voluptate similique, mollitia, quos totam tempora hic assumenda quas deleniti aliquam enim magnam! Sint, dolores quidem.</p>
+  </div>
+  </div>
+  <div class="project-photos">
+    <div class="project-image-inside">     <img src="https://cdn.discordapp.com/attachments/998995040514883694/1005950471611093123/Proj2.jpg" alt=""></div>
+    <div class="project-image-inside">     <img src="https://cdn.discordapp.com/attachments/998995040514883694/1005950471611093123/Proj2.jpg" alt=""></div>
+    <div class="project-image-inside">     <img src="https://cdn.discordapp.com/attachments/998995040514883694/1005950471611093123/Proj2.jpg" alt=""></div>
+    <div class="project-image-inside">     <img src="https://cdn.discordapp.com/attachments/998995040514883694/1005950471611093123/Proj2.jpg" alt=""></div>
+    <div class="project-image-inside">     <img src="https://cdn.discordapp.com/attachments/998995040514883694/1005950471611093123/Proj2.jpg" alt=""></div>
+  </div>
+  <div class="semi-projects">
+    <div class="project-content">
+      <h2>Designing Dashboards</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam natus officiis earum perferendis commodi rerum qui! Quisquam voluptatibus ducimus quasi perspiciatis debitis iste, earum repellendus aut maiores totam nostrum odio.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati vitae perspiciatis distinctio. Impedit eum voluptate similique, mollitia, quos totam tempora hic assumenda quas deleniti aliquam enim magnam! Sint, dolores quidem.</p>
+    </div>
+    <div class="vl"></div>
+    <div class="project-image"><img src="https://cdn.discordapp.com/attachments/998995040514883694/1005812071889383454/Proj1.png" class="porject-image-inside"></div>
+  </div>
+  <div class="project-photos">
+    <div class="project-image-inside">     <img src="https://cdn.discordapp.com/attachments/998995040514883694/1005950471611093123/Proj2.jpg" alt=""></div>
+    <div class="project-image-inside">     <img src="https://cdn.discordapp.com/attachments/998995040514883694/1005950471611093123/Proj2.jpg" alt=""></div>
+    <div class="project-image-inside">     <img src="https://cdn.discordapp.com/attachments/998995040514883694/1005950471611093123/Proj2.jpg" alt=""></div>
+    <div class="project-image-inside">     <img src="https://cdn.discordapp.com/attachments/998995040514883694/1005950471611093123/Proj2.jpg" alt=""></div>
+    <div class="project-image-inside">     <img src="https://cdn.discordapp.com/attachments/998995040514883694/1005950471611093123/Proj2.jpg" alt=""></div>
+  </div>
+</div>
+</div>
+<div class="contact-form">
+  
 </div>
 <script src="script.js"></script>
-
 </body>
 </html>
