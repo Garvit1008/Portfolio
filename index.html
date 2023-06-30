@@ -3,38 +3,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Garvit Dang</title>
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Allura&family=Changa&family=Dancing+Script:wght@500;600&family=Tangerine:wght@700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
 </head>
 <body> 
-    <header class="navv">
-        <div style="display: flex; gap: 12px;">
-          <img src="garvitlogo.png">
-        </div>
-            <ul class="seminavv" id="semi"> 
-                <li><a href="#"  id="hom" onclick="colorchange2()" class="home">Home</a></li>
+    <header>
+       <div class="logo">
+        <h1>Garvit</h1>
+        <h1>Dang</h1> 
+      </div>
+       <div class="hamburger">
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+       </div>
+       <nav class="nav-bar">
+            <ul> 
+                <li><a href="#"  id="hom"  class="active">Home</a></li>
                 <li><a href="#skills" id="skilll">Skills</a></li>
-                <li><a href="#projectss" id="proo" onclick="colorchange()">Projects</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#projectss" id="proo">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-            <label class="switch">
-  <input type="checkbox" checked>
-  <span class="slider round"></span>
-</label>
-    </header>
+       </nav>
+          </header>
     <div class="main">
     <div class="frontpage">
     <div class="innerdiv1">
-        <h1 class="yolo">Hello,</h1>
-        <h1 class="yolo" style="color:#0ef">I'm</h1> 
+        <h1 >Hello,</h1>
+        <h1 class="special">I'm</h1> 
     </div>
     <div class="innerdiv2">
         <h1 class="yolo">GARVIT</h1><h1 style="color: #0ef;">DANG</h1>
@@ -44,7 +48,7 @@
     </div>
     <div class="innerdiv4">
         <p>With knowledge in Web Development and 
-        design, I offer the best brojects resulting
+        design, I offer the best projects resulting
         in quality work... </p>
     </div>
 
@@ -53,7 +57,7 @@
 </div>
 <section id="skills"></section>
 <div class="skills" id="skill-id">
-  <div><h1>Skills</h1></div>
+  <div><h1 class="skill-heading">Skills</h1></div>
   <div class="semiskills">
   <div class="skill-html">
     <img src="https://cdn3d.iconscout.com/3d/free/thumb/html-5728485-4781249.png" alt="content">
@@ -93,46 +97,59 @@
 </div>
 </div>
 <section id="projectss"></section>
-
 <div class="projects">
-  <h1>Projects</h1>
-  <div class="semi-projects">
-    <div class="project-image"><img src="https://cdn.discordapp.com/attachments/998995040514883694/1005812071889383454/Proj1.png" class="porject-image-inside"></div>
-    <div class="vl"></div>
-    <div class="project-content">
-    <h2>Designing Dashboards</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam natus officiis earum perferendis commodi rerum qui! Quisquam voluptatibus ducimus quasi perspiciatis debitis iste, earum repellendus aut maiores totam nostrum odio.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati vitae perspiciatis distinctio. Impedit eum voluptate similique, mollitia, quos totam tempora hic assumenda quas deleniti aliquam enim magnam! Sint, dolores quidem.</p>
-  </div>
-  </div>
-  <div class="project-photos">
-    <div class="project-image-inside">     <img src="https://cdn.discordapp.com/attachments/998995040514883694/1005950471611093123/Proj2.jpg" alt=""></div>
-    <div class="project-image-inside">     <img src="https://cdn.discordapp.com/attachments/998995040514883694/1005950471611093123/Proj2.jpg" alt=""></div>
-    <div class="project-image-inside">     <img src="https://cdn.discordapp.com/attachments/998995040514883694/1005950471611093123/Proj2.jpg" alt=""></div>
-    <div class="project-image-inside">     <img src="https://cdn.discordapp.com/attachments/998995040514883694/1005950471611093123/Proj2.jpg" alt=""></div>
-    <div class="project-image-inside">     <img src="https://cdn.discordapp.com/attachments/998995040514883694/1005950471611093123/Proj2.jpg" alt=""></div>
-  </div>
-  <div class="semi-projects">
-    <div class="project-content">
-      <h2>Designing Dashboards</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam natus officiis earum perferendis commodi rerum qui! Quisquam voluptatibus ducimus quasi perspiciatis debitis iste, earum repellendus aut maiores totam nostrum odio.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati vitae perspiciatis distinctio. Impedit eum voluptate similique, mollitia, quos totam tempora hic assumenda quas deleniti aliquam enim magnam! Sint, dolores quidem.</p>
-    </div>
-    <div class="vl"></div>
-    <div class="project-image"><img src="https://cdn.discordapp.com/attachments/998995040514883694/1005812071889383454/Proj1.png" class="porject-image-inside"></div>
-  </div>
-  <div class="project-photos">
-    <div class="project-image-inside">     <img src="https://cdn.discordapp.com/attachments/998995040514883694/1005950471611093123/Proj2.jpg" alt=""></div>
-    <div class="project-image-inside">     <img src="https://cdn.discordapp.com/attachments/998995040514883694/1005950471611093123/Proj2.jpg" alt=""></div>
-    <div class="project-image-inside">     <img src="https://cdn.discordapp.com/attachments/998995040514883694/1005950471611093123/Proj2.jpg" alt=""></div>
-    <div class="project-image-inside">     <img src="https://cdn.discordapp.com/attachments/998995040514883694/1005950471611093123/Proj2.jpg" alt=""></div>
-    <div class="project-image-inside">     <img src="https://cdn.discordapp.com/attachments/998995040514883694/1005950471611093123/Proj2.jpg" alt=""></div>
-  </div>
+  <h1 class="project-heading">Projects</h1>
+     <div class="project-photos">
+     <div class="project-image-inside"><img src="paytmproject.png"></div>
+     <div class="project-image-inside">     <img src="huluclone.png" alt=""></div>
+     <div class="project-image-inside">     <img src="codeyogiclone.png" alt=""></div>
+     <div class="project-image-inside">     <img src="codeyogiclone.png" alt=""></div>
+     <div class="project-image-inside">     <img src="huluclone.png" alt=""></div>
+     <div class="project-image-inside"><img src="paytmproject.png"></div>
+     </div>
+     </div>
+     <section id="contact"></section>
+<div class="main-form">
+  <div class="behind-form"></div>
+    <div class="front-form">
+      <div class="form-content-left">
+        <div class="contact-us">
+          <span>Contact</span>
+          <span>Us</span>
+        </div>
+        <div class="contact-info">CONTACT INFO : +7351073073</div>
+      </div>
+      <div class="form-content-right">
+        <form action="mailto:garvitdang10august@gmail.com">
+          <input type="text" placeholder="name" class="text-only" required>
+        <input type="email" placeholder="email" class="email-only" required>
+          <input type="text" placeholder="message" required>
+          <div class="form-buttons">
+            <button class="form-button-send" type="submit" onclick="submitted()">Send</button>
+            <button class="form-button-cancel" type="submit">Cancel</button>
+          </div>
+        </form>
+      </div>
 </div>
 </div>
-<div class="contact-form">
-  
-</div>
+<footer>
+  <div class="icons">
+    <i class="fa-brands fa-instagram fa-2xl " style="color: #bc2a8d;"></i>
+    <i class="fa-brands fa-facebook-f  fa-2xl"style="color: #3b5998;"></i>
+    <i class="fa-brands fa-linkedin   fa-2xl"style="color: #0e76a8 ;"></i>
+    <i class="fa-brands fa-twitter fa-2xl" style="color:  #00acee ;"></i>
+  </div>
+  <div class="footer-content">
+    <a href="">About</a>
+    <a href="">Need Help?</a>
+    <a href="">Content Guide</a>
+    <a href="">Designs</a>
+    <a href="">More</a>
+  </div>
+  <div class="copyright">
+    <p>&#169; Designed and Developed by Garvit dang</p>
+  </div>
+</footer>
 <script src="script.js"></script>
 </body>
 </html>
