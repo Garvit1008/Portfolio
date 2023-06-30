@@ -559,6 +559,14 @@ display: none;
       font-family: Arial, Helvetica, sans-serif;
       color: grey;
     }
+      .project-heading{
+        margin-top: 20px;
+        color: #0ef;
+        text-shadow: 2px 2px 8px #0ef ;
+        cursor: pointer;
+        margin-bottom: 17px;
+        font-size: 40px;
+      }
     .semiskills{
       display: flex;
       justify-content: center;
@@ -577,7 +585,6 @@ display: none;
     display: flex;
     justify-content: end;
     background-color: #0ef;
-
     font-size: 12px;
     border-radius: 10px;
     height: 14px;
@@ -622,7 +629,13 @@ display: none;
       flex-wrap: wrap;
       margin-bottom: 120px;
     }
-      
+          .skill-heading{
+      color: #0ef;
+      text-shadow: 2px 2px 8px #0ef ;
+      cursor: pointer;
+      margin-bottom: 17px;
+      font-size: 40px;
+    }
     .project-image img:hover{
       transform: translateY(12px);
       cursor: pointer;
