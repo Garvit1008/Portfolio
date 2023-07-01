@@ -79,7 +79,7 @@ display: none;
   overflow: hidden;
 }
 .nav-bar.active{
-  height: 300px;
+  height: 270px;
 }
 .nav-bar.active ul{
   opacity: 1;
@@ -293,16 +293,11 @@ display: none;
         transform: translateY(12px);
         cursor: pointer;
       }
-      .vl{
-        border-left: 6px solid burlywood;
-        height: 400px;
-      }
       .project-photos{
         display: flex;
         flex-wrap: wrap;
-        column-gap:52px;
         row-gap: 22px;
-        justify-content: center;
+        justify-content: space-between;
       }
       
       .project-image-inside{
@@ -514,9 +509,11 @@ display: none;
         font-size: 20px;
         color: #0ef;
         text-shadow: 2px 2px 6px #0ef;
+        padding: 12px;
     }
     .innerdiv4{
         font-size: 15px;
+        padding: 22px;
     }
     .btn{
         margin-top: 12px;
@@ -541,6 +538,7 @@ display: none;
                     0 0 200px #03e9f4;
                     color: #000;
     }
+
     .skills{
       background-color: #000;
       display: flex;
@@ -559,14 +557,13 @@ display: none;
       font-family: Arial, Helvetica, sans-serif;
       color: grey;
     }
-      .project-heading{
-        margin-top: 20px;
-        color: #0ef;
-        text-shadow: 2px 2px 8px #0ef ;
-        cursor: pointer;
-        margin-bottom: 17px;
-        font-size: 40px;
-      }
+    .skill-heading{
+      color: #0ef;
+      text-shadow: 2px 2px 8px #0ef ;
+      cursor: pointer;
+      margin-bottom: 17px;
+      font-size: 40px;
+    }
     .semiskills{
       display: flex;
       justify-content: center;
@@ -585,6 +582,7 @@ display: none;
     display: flex;
     justify-content: end;
     background-color: #0ef;
+
     font-size: 12px;
     border-radius: 10px;
     height: 14px;
@@ -629,13 +627,14 @@ display: none;
       flex-wrap: wrap;
       margin-bottom: 120px;
     }
-          .skill-heading{
-      color: #0ef;
-      text-shadow: 2px 2px 8px #0ef ;
-      cursor: pointer;
-      margin-bottom: 17px;
-      font-size: 40px;
-    }
+      .project-heading{
+        margin-top: 20px;
+        color: #0ef;
+        text-shadow: 2px 2px 8px #0ef ;
+        cursor: pointer;
+        margin-bottom: 17px;
+        font-size: 40px;
+      }
     .project-image img:hover{
       transform: translateY(12px);
       cursor: pointer;
@@ -660,9 +659,8 @@ display: none;
     .project-photos{
       display: flex;
       flex-wrap: wrap;
-      column-gap:52px;
-      row-gap: 22px;
       justify-content: center;
+      gap: 30px;
     }
 
     .main-form{
